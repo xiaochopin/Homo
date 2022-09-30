@@ -1,9 +1,22 @@
+<!DOCTYPE html>
 <html id="rbq">
 <head>
-	<title>恶臭数字论证器</title>
-	<link rel="Shortcut Icon" href="https://github.com/fluidicon.png">
-	<link rel="bookmark" href="https://github.com/fluidicon.png">
-	<style>
+  <meta charset="UTF-8">
+  <meta name="description" content="在碧蓝中肆意遨游,缕缕阳光也为你闪耀."/>
+  <title>homo | 重生云</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="//fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet">
+  <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet">
+  <link rel="icon" type="image/x-icon" href="https://github.com/fluidicon.png">
+  
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  
+  
+  <link rel="stylesheet" href="/assets/css/tomorrow-night-eighties.css">
+  
+  
+  <link rel="stylesheet" href="/assets/css/style.css">  
+  <style>
 		input{
 			outline:0;
 			font-size:20px;
@@ -23,17 +36,91 @@
 		}
 	</style>
 </head>
-<body>
-	<input id="进" placeholder="输入数字" type="number">
-	<div id="哼哼啊啊"></div>
-	<script src="homo.js"></script>
-	<script>
-		进.oninput = _=>{
-			const 数字 = 进.value === '' ? '' : Number(进.value);
-			哼哼啊啊.innerHTML = 数字 +' = <big>'+ homo(数字) + '</big>';
-			rbq.setAttribute('数字',数字);
-		};
-		进.oninput();
-	</script>
-</body>
+
+  <body>
+    <div class="content" id="header">
+      <header class="content-wrapper menu">
+  <div class="menu-home">
+    <a href="https://blog.home-chopin.xyz">重生云</a>
+  </div>
+  <div class="menu-links">
+  
+  
+  
+    
+    <div class="menu-item">
+      <a href="https://blog.home-chopin.xyz/menu.html">Menu</a>
+    </div>
+  
+    
+    <div class="menu-item">
+      <a href="https://blog.home-chopin.xyz/about.html">About</a>
+    </div>
+  
+  </div>
+</header>
+
+    </div>
+    <div class="content" id="main-content">
+      <div class="content-wrapper">
+        <div class="page">
+  <div class="page-main">
+    <div class="page-title">恶臭数字便证器</div>
+
+<p>一个将任意数字分解成 114514 构成的公式的工具.</p>
+
+<input id="进" placeholder="输入数字" type="number">
+<div id="哼哼啊啊"></div>
+<script src="homo.js"></script>
+<script>
+  进.oninput = _=>{
+    const 数字 = 进.value === '' ? '' : Number(进.value);
+    哼哼啊啊.innerHTML = 数字 +' = <big>'+ homo(数字) + '</big>';
+    rbq.setAttribute('数字',数字);
+  };
+  进.oninput();
+</script>
+
+<h4 id="github">Github</h4>
+<p><a href="https://github.com/xiaochopin/homo/">xiaochopin/homo</a></p>
+
+<h4 id="原项目地址">原项目地址</h4>
+<p><a href="https://github.com/itorr/homo">https://github.com/itorr/homo</a></p>
+
+<h4 id="license">License</h4>
+<ul>
+  <li><a href="https://github.com/xiaochopin/homo/blob/master/LICENSE">MIT</a></li>
+</ul>
+
+  </div>
+</div>
+
+      </div>
+    </div>
+    <footer>
+  <div class="content-wrapper contact" id="contact">
+    <div class="contact-links">
+    
+      <a href="/feed.xml"><i class="fa fa-file-code-o"></i></a>
+    
+      <a href="mailto:asdfqwerzxcv51@163.com"><i class="fa fa-envelope-o"></i></a>
+    
+      <a href="https://github.com/xiaochopin"><i class="fa fa-github"></i></a>
+    
+    </div>
+    <div class="contact-copyright">
+      Chopin &copy; 2022
+    </div>
+  </div>
+</footer>
+
+    
+<script src="/assets/scripts/highlight.pack.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+    
+
+    
+
+  </body>
 </html>
